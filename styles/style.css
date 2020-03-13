@@ -2,8 +2,10 @@
 body {
   font-family: "Muli", sans-serif;
   margin: 0px;
+  padding: 10px;
 }
 
+/************ top section *************/
 .top_section {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -14,7 +16,7 @@ body {
           flex-flow: row-reverse wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .top_section .image {
@@ -28,7 +30,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 80px 80px 0px 80px;
+  margin: 80px 80px 80px 80px;
 }
 
 .top_section .image img {
@@ -123,5 +125,329 @@ body {
 
 .top_section .about .socal_media a {
   margin: 20px 20px 20px 20px;
+}
+
+.top_section .about .socal_media a i {
+  color: #303030;
+}
+
+/*********** about me *************/
+.aboutme {
+  margin-top: 100px;
+  margin: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.aboutme .image {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  max-width: 600px;
+  min-width: 300px;
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 700px) {
+  .aboutme .image {
+    margin-right: 0px;
+  }
+}
+
+.aboutme .image img {
+  width: 100%;
+}
+
+.aboutme .about {
+  max-width: 500px;
+  width: 100%;
+  min-width: 300px;
+}
+
+.aboutme .about h2 {
+  font-weight: 800;
+}
+
+.aboutme .about p {
+  font-size: 13px;
+  font-weight: 300;
+  letter-spacing: 0.05em;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.aboutme .about .code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.aboutme .about .code .code_name {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 5px;
+  padding: 3px 10px 3px 10px;
+  border: 1px solid #23d662;
+  border-radius: 5px;
+}
+
+.aboutme .about input {
+  height: 35px;
+  margin-top: 30px;
+  border-radius: 100px;
+  background-color: #23d662;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 20px 10px 20px;
+}
+
+/******************* what i do ************/
+.whatido {
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.whatido .heading h1 {
+  font-weight: 800;
+}
+
+.whatido .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.whatido .options .option {
+  border-radius: 10px;
+  min-height: 200px;
+  background-color: #fff;
+  margin: 20px;
+  padding: 20px;
+  min-width: 260px;
+  width: 100%;
+  max-width: 300px;
+  -webkit-box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.055), 0 26px 40px 0 rgba(0, 0, 0, 0.075);
+          box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.055), 0 26px 40px 0 rgba(0, 0, 0, 0.075);
+}
+
+.whatido .options .option i {
+  font-size: 15px;
+  color: rgba(170, 170, 170, 0.479);
+}
+
+.whatido .options .option h2 {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+}
+
+.whatido .options .option .code {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.whatido .options .option .code .code_name {
+  font-size: 12px;
+  font-weight: 700;
+  margin: 5px;
+  padding: 3px 10px 3px 10px;
+  border: 1px solid #303030;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.whatido .options .option .code .code_name i {
+  margin-right: 5px;
+  color: #303030;
+  font-size: 15px;
+}
+
+@media screen and (max-width: 700px) {
+  .whatido .options .option {
+    margin: 10px 0px 10px 0px;
+  }
+}
+
+/*********** skills ***************/
+.exprience {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1200px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.exprience h1 {
+  margin-bottom: 50px;
+  letter-spacing: 0.05em;
+  font-weight: 800;
+}
+
+.skills {
+  margin-top: 100px;
+}
+
+.skills .technical_skill .lang .holder .bar {
+  height: 10px;
+  background-color: #dfdfdf;
+}
+
+.skills .technical_skill .lang .holder .bar span {
+  background-color: #2cfd75;
+}
+
+.card {
+  margin-bottom: 40px;
+  background-color: white;
+  -webkit-box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.055), 0 6px 10px 0 rgba(0, 0, 0, 0.075);
+          box-shadow: 0 4px 28px 0 rgba(0, 0, 0, 0.055), 0 6px 10px 0 rgba(0, 0, 0, 0.075);
+  border-radius: 10px;
+  max-width: 450px;
+  padding: 5px 20px;
+}
+
+/******************** recent works  ************************/
+.recnt_work {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  max-width: 1200px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recnt_work h3 {
+  font-weight: 800;
+  font-size: 30px;
+}
+
+.recnt_work .menu {
+  margin: 10px;
+  margin-bottom: 30px;
+}
+
+.recnt_work .menu a {
+  margin: 5px 15px;
+  font-size: 12px;
+  font-weight: 800;
+  text-decoration: none;
+  color: rgba(31, 31, 31, 0.507);
+  letter-spacing: 0.07em;
+}
+
+.recnt_work .menu a:hover {
+  cursor: pointer;
+}
+
+.recnt_work .menu .active {
+  padding: 5px 10px;
+  color: #23D662;
+  border-bottom: 2px solid #23D662;
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  font-weight: 900;
+}
+
+.recnt_work .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recnt_work .gallery div {
+  -webkit-transition: ease-in-out 0.2s;
+  transition: ease-in-out 0.2s;
+}
+
+.recnt_work .gallery div img {
+  margin: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  min-width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.055), 0 0px 10px 0 rgba(0, 0, 0, 0.322);
+          box-shadow: 0 0px 1px 0 rgba(0, 0, 0, 0.055), 0 0px 10px 0 rgba(0, 0, 0, 0.322);
+}
+
+@media screen and (max-width: 500px) {
+  .recnt_work .gallery div img {
+    width: 85vw;
+  }
 }
 /*# sourceMappingURL=style.css.map */
